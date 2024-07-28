@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,126 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 14px;
+  border-style: none;
+}
+
+.overview {
+
+}
+
+.overview-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.overview-title {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  padding-top: 3rem;
+}
+
+.overview-description {
+  font-size: 16px;
+  padding: 1rem 0;
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+}
+
+.prepare {
+  padding: 2rem;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+}
+
+.prepare-title {
+  font-family: 'Outfit', serif;
+  font-weight: 600;
+}
+
+.bullet-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.bullet-list li {
+  position: relative;
+  margin-bottom: 10px;
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+}
+
+.bullet-list li::before {
+  content: '•';
+  color: hsl(332, 51%, 32%);
+  position: absolute;
+  left: -20px;
+  font-size: 1.5em;
+}
+
+.order-list {
+  counter-reset: custom-counter;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.order-list li {
+  counter-increment: custom-counter;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+}
+
+.order-list li::before {
+  content: counter(custom-counter) '.';
+  color: hsl(332, 51%, 32%);;
+  position: absolute;
+  left: -25px;
+  font-weight: bold;
+}
+
+.prepare-description {
+}
+
+.ingredient {
+
+}
+
+.ingredient-title {
+
+}
+
+.ingredient-description {
+
+}
+
+.instruction {
+
+}
+
+.instruction-title {
+
+}
+
+.instruction-description {
+
+}
+
+.nutrition {
+
+}
+
+.nutrition-title {
+
+}
+
+.nutrition-description {
+
 }

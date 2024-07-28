@@ -4,25 +4,25 @@ import food_img from './assets/images/image-omelette.jpeg';
 
 function App() {
   return (
-    <div>
-      <div>
-        <img src={food_img} alt="Omelette" />
-        <h1>Simple Omelette Recipe</h1>
-        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    <div className="card" style={{width: '45rem'}}>
+      <div className="overview">
+        <img className="overview-img" src={food_img} alt="Omelette" />
+        <h1 className="overview-title">Simple Omelette Recipe</h1>
+        <p className="overview-description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
       </div>
 
-      <div>
-        <h4>Preparation time</h4>
-        <ul>
+      <div className="prepare">
+        <h4 className="prepare-title">Preparation time</h4>
+        <ul className="bullet-list">
           <li><strong>Total:</strong> Approximately 10 minutes</li>
           <li><strong>Preparation:</strong> 5 minutes</li>
           <li><strong>Cooking:</strong> 5 minutes</li>
         </ul>
       </div>
 
-      <div>
-        <h2>Ingredients</h2>
-        <ul>
+      <div className="ingredient">
+        <h2 className="ingredient-title">Ingredients</h2>
+        <ul className="bullet-list">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
@@ -31,9 +31,9 @@ function App() {
         </ul>
       </div>
 
-      <div>
-        <h2>Instructions</h2>
-        <ol>
+      <div className="instruction">
+        <h2 className="instruction-title">Instructions</h2>
+        <ol className="order-list">
           <li>
             <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
           </li>
@@ -55,10 +55,10 @@ function App() {
         </ol>
       </div>
 
-      <div>
-        <h2>Nutrition</h2>
+      <div className="nutrition">
+        <h2 className="nutrition-title">Nutrition</h2>
         The table below shows nutritional values per serving without the additional fillings.
-        <table>
+        <table className="nutrition-description">
           <tr>
             <th>Calories</th>
             <th>277kcal</th>

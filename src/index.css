@@ -20,3 +20,11 @@ code {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+#root {
+  background-color: hsl(30, 54%, 90%);
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
