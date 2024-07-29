@@ -11,18 +11,18 @@ function App() {
         <p className="overview-description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
       </div>
 
-      <div className="prepare">
-        <h4 className="prepare-title">Preparation time</h4>
-        <ul className="bullet-list">
-          <li><strong>Total:</strong> Approximately 10 minutes</li>
-          <li><strong>Preparation:</strong> 5 minutes</li>
-          <li><strong>Cooking:</strong> 5 minutes</li>
+      <div className="pink-box">
+        <h5 className="pink-box-title">Preparation time</h5>
+        <ul className="unorder-list">
+          <li><strong>Total</strong>: Approximately 10 minutes</li>
+          <li><strong>Preparation</strong>: 5 minutes</li>
+          <li><strong>Cooking</strong>: 5 minutes</li>
         </ul>
       </div>
 
-      <div className="ingredient">
-        <h2 className="ingredient-title">Ingredients</h2>
-        <ul className="bullet-list">
+      <div className="detail-box">
+        <h2 className="detail-box-title">Ingredients</h2>
+        <ul className="unorder-list">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
@@ -31,34 +31,38 @@ function App() {
         </ul>
       </div>
 
-      <div className="instruction">
-        <h2 className="instruction-title">Instructions</h2>
+      <hr className="section-separator"></hr>
+
+      <div className="detail-box">
+        <h2 className="detail-box-title">Instructions</h2>
         <ol className="order-list">
           <li>
-            <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
           </li>
           <li>
-            <strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.
+            <strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.
           </li>
           <li>
-            <strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
           </li>
           <li>
-            <strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+            <strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
           </li>
           <li>
-            <strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            <strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
           </li>
           <li>
-            <strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
+            <strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.
           </li>
         </ol>
       </div>
 
-      <div className="nutrition">
-        <h2 className="nutrition-title">Nutrition</h2>
+      <hr className="section-separator"></hr>
+
+      <div className="detail-box">
+        <h2 className="detail-box-title">Nutrition</h2>
         The table below shows nutritional values per serving without the additional fillings.
-        <table className="nutrition-description">
+        <table className="detail-box-table">
           <tr>
             <th>Calories</th>
             <th>277kcal</th>
