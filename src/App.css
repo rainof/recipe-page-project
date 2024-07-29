@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,8 +37,8 @@
 }
 
 .card {
-  padding: 2rem;
-  border-radius: 14px;
+  padding: 2.5rem 2.6rem 1rem 2.6rem;
+  border-radius: 25px;
   border-style: none;
 }
 
@@ -49,13 +48,15 @@
 
 .overview-img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 .overview-title {
   font-family: 'Young Serif', serif;
   font-weight: 400;
-  padding-top: 3rem;
+  font-size: 40px;
+  padding-top: 2.5rem;
+  color: hsl(24, 5%, 18%);
 }
 
 .overview-description {
@@ -67,9 +68,10 @@
 }
 
 .pink-box {
-  padding: 1.6rem;
+  padding: 1.3rem 1.8rem;
   background-color: hsl(330, 100%, 98%);
   border-radius: 12px;
+  margin-bottom: 0.8rem;
 }
 
 .pink-box-title {
@@ -98,7 +100,7 @@
   color: hsl(332, 51%, 32%);
   display: inline-block;
   margin-right: 1.6rem;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 .detail-box {
@@ -116,7 +118,7 @@
 .unorder-list {
   list-style-type: none;
   padding-left: 7px;
-  margin: 0;
+  margin-top: -0.2rem;
 }
 
 .unorder-list li {
@@ -132,39 +134,81 @@
   color: hsl(14, 45%, 36%);
   display: inline-block;
   margin-right: 1.6rem;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 .order-list {
   list-style-type: none;
   padding-left: 7px;
-  margin: 0;
+  margin-bottom: 1.2rem;
 }
 
 .order-list li {
   counter-increment: custom-counter;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-family: 'Outfit', serif;
   font-weight: 400;
   color: hsl(30, 10%, 34%);
 }
 
+.order-list li p {
+  margin: 0;
+  text-indent: 0em;
+  padding-left: 2.5em;
+}
+
 .order-list li::before {
   content: counter(custom-counter) '.';
   color: hsl(14, 45%, 36%);
-  left: -25px;
+  position: absolute;
+  left: 0;
   font-weight: bold;
-  display: inline-block;
-  margin-right: 1.4rem;
-}
-
-.detail-box-table {
-
+  width: 1rem;
+  text-align: right;
 }
 
 .section-separator {
   border: none;
-  border-top: 1px solid hsl(30, 10%, 34%); /* Color and style of the line */
-  margin-top: 5; /* Spacing around the line */
+  border-top: 1px solid hsl(30, 10%, 34%);
+  margin-top: 0;
+}
+
+.detail-box-table {
+  width: 100%;
+}
+
+.table-description {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+tr:not(:last-child) {
+  border: none;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-top: 0;
+}
+
+th {
+  padding-top: 0.8rem;
+  padding-bottom: 0.7rem;
+}
+
+.table-attribute {
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  padding-left: 2rem;
+}
+
+.table-value {
+  font-family: 'Outfit', serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  padding-right: 2rem;
 }

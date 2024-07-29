@@ -4,7 +4,7 @@ import food_img from './assets/images/image-omelette.jpeg';
 
 function App() {
   return (
-    <div className="card" style={{width: '45rem'}}>
+    <div className="card" style={{width: '46.5rem'}}>
       <div className="overview">
         <img className="overview-img" src={food_img} alt="Omelette" />
         <h1 className="overview-title">Simple Omelette Recipe</h1>
@@ -37,22 +37,34 @@ function App() {
         <h2 className="detail-box-title">Instructions</h2>
         <ol className="order-list">
           <li>
-            <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            <p>
+              <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            </p>
           </li>
           <li>
-            <strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.
+            <p>
+              <strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.
+            </p>
           </li>
           <li>
-            <strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <p>
+              <strong>Cook the omelette</strong>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </p>
           </li>
           <li>
-            <strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+            <p>
+              <strong>Add fillings (optional)</strong>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+            </p>
           </li>
           <li>
-            <strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            <p>
+              <strong>Fold and serve</strong>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            </p>
           </li>
           <li>
-            <strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.
+            <p>
+              <strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.
+            </p>
           </li>
         </ol>
       </div>
@@ -61,23 +73,23 @@ function App() {
 
       <div className="detail-box">
         <h2 className="detail-box-title">Nutrition</h2>
-        The table below shows nutritional values per serving without the additional fillings.
+        <p className="table-description">The table below shows nutritional values per serving without the additional fillings.</p>
         <table className="detail-box-table">
           <tr>
-            <th>Calories</th>
-            <th>277kcal</th>
+            <th className="table-attribute">Calories</th>
+            <th className="table-value">277kcal</th>
           </tr>
           <tr>
-            <th>Carbs</th>
-            <th>0g</th>
+            <th className="table-attribute">Carbs</th>
+            <th className="table-value">0g</th>
           </tr>
           <tr>
-            <th>Protein</th>
-            <th>20g</th>
+            <th className="table-attribute">Protein</th>
+            <th className="table-value">20g</th>
           </tr>
           <tr>
-            <th>Fat</th>
-            <th>22g</th>
+            <th className="table-attribute">Fat</th>
+            <th className="table-value">22g</th>
           </tr>
         </table>
       </div>
