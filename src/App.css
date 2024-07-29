@@ -212,3 +212,39 @@ th {
   color: hsl(14, 45%, 36%);
   padding-right: 2rem;
 }
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0;
+  }
+
+  .card {
+    padding: 0;
+    border-radius: 0%;
+    height: 100%;
+  }
+
+  .overview-img {
+    border-radius: 0%;
+    padding: 0;
+  }
+
+  .overview-title {
+    padding-top: 1.5rem;
+    font-size: 36px;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .overview-description {
+    padding: 0.5rem 2rem;
+  }
+
+  .pink-box {
+    /* padding: 1.3rem 1.8rem; */
+    margin: 0.5rem 2rem;
+  }
+
+  .detail-box {
+    padding: 0.5rem 2rem;
+  }
+}
