@@ -38,7 +38,7 @@
 }
 
 .card {
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 14px;
   border-style: none;
 }
@@ -79,12 +79,34 @@
   padding: 0.3rem 0;
 }
 
+.pink-unorder-list {
+  list-style-type: none;
+  padding-left: 7px;
+  margin: 0;
+}
+
+.pink-unorder-list li {
+  display: flex;
+  align-items: center;
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+.pink-unorder-list li::before {
+  content: '•';
+  color: hsl(332, 51%, 32%);
+  display: inline-block;
+  margin-right: 1.6rem;
+  font-size: 1.4rem;
+}
+
 .detail-box {
   padding-bottom: 0.7rem;
 }
 
 .detail-box-title {
-  padding-top: 2.2rem;
+  padding-top: 1.1rem;
   padding-bottom: 0.8rem;
   font-family: 'Young Serif', serif;
   font-weight: 400;
@@ -114,27 +136,27 @@
 }
 
 .order-list {
-  counter-reset: custom-counter;
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 7px;
+  margin: 0;
 }
 
 .order-list li {
   counter-increment: custom-counter;
   position: relative;
   margin-bottom: 10px;
-  font-size: 16px;
-  color: hsl(30, 10%, 34%);
   font-family: 'Outfit', serif;
   font-weight: 400;
+  color: hsl(30, 10%, 34%);
 }
 
 .order-list li::before {
   content: counter(custom-counter) '.';
-  color: hsl(332, 51%, 32%);;
-  position: absolute;
+  color: hsl(14, 45%, 36%);
   left: -25px;
   font-weight: bold;
+  display: inline-block;
+  margin-right: 1.4rem;
 }
 
 .detail-box-table {
@@ -144,5 +166,5 @@
 .section-separator {
   border: none;
   border-top: 1px solid hsl(30, 10%, 34%); /* Color and style of the line */
-  margin: 20px 0; /* Spacing around the line */
+  margin-top: 5; /* Spacing around the line */
 }

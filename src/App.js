@@ -13,7 +13,7 @@ function App() {
 
       <div className="pink-box">
         <h5 className="pink-box-title">Preparation time</h5>
-        <ul className="unorder-list">
+        <ul className="pink-unorder-list">
           <li><strong>Total</strong>: Approximately 10 minutes</li>
           <li><strong>Preparation</strong>: 5 minutes</li>
           <li><strong>Cooking</strong>: 5 minutes</li>
