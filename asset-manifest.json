@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/recipe-page-project/static/css/main.026872cc.css",
+    "main.js": "/recipe-page-project/static/js/main.07733716.js",
+    "static/js/453.c8746e84.chunk.js": "/recipe-page-project/static/js/453.c8746e84.chunk.js",
+    "static/media/image-omelette.jpeg": "/recipe-page-project/static/media/image-omelette.98c8ed59c5ae707e58ea.jpeg",
+    "index.html": "/recipe-page-project/index.html",
+    "main.026872cc.css.map": "/recipe-page-project/static/css/main.026872cc.css.map",
+    "main.07733716.js.map": "/recipe-page-project/static/js/main.07733716.js.map",
+    "453.c8746e84.chunk.js.map": "/recipe-page-project/static/js/453.c8746e84.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.026872cc.css",
+    "static/js/main.07733716.js"
+  ]
+}
